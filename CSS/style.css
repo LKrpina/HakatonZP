@@ -165,6 +165,11 @@ header {
     height: auto;
     font-size: 25px;
 }
+    .logo {
+        display: block;
+        height:  50px;
+        width: 50px;
+    }
     .main-navbar h1 {
         display: flex;
         justify-content: center;
@@ -218,26 +223,6 @@ header {
     width: auto;
     margin: 2vw;
 }
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: auto;
-}
-    .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-        .footer-links a {
-            margin: 1vw;
-        }
-        .footer-logo {
-            width: 100px;
-            height: auto;
-        }
-
 
 /*--------------------------------------LUCIJAN-------------------------------------*/
 .image-wrapper {
