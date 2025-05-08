@@ -8,6 +8,8 @@ body{
 .main-navbar {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    height: auto;
     font-size: 25px;
 }
 .main-navbar h1 {
@@ -19,9 +21,8 @@ body{
 }
 .logo\&img {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     float: left;
-    border: 3px red solid;
 }
 .main-navbar-a {
     padding:  10px;
@@ -47,8 +48,9 @@ body{
     background-color: transparent;
     border: 3px red solid;
 }
+/*-------------------------------------------------------------------------------------------------*/
 
-/*---------------------------------------------------------------------------------*/
+/*------JELOVNIK SECTION---------------------------------------------------------------------------*/
 
 .Flex_Box_Jelovnik{
     display: flex;
@@ -58,19 +60,22 @@ body{
 }
 .Dnevni_Jelovnik{
     font-family: "Berlin Sans FB Demi", sans-serif;
-    text-align: left;
+    text-align: center;
     margin-left: 30px;
     margin-right: 30px;
     font-size: 20px;
-    border: 3px red solid;
-}
+    background-color: transparent;
+} .Dnevni_Jelovnik:hover{
+    background-image: url("");
+  }
 .Naslov{
     font-family: "Berlin Sans FB Demi", sans-serif;
     text-align: center;
     font-size: 20px;
 }
+/*--------JELOVNIK SECTION------------------------------------------------------------------*/
 
-/*--------------------------------------------------------------------------*/
+/*--------LOKACIJE SECTION------------------------------------------------------------------*/
 
 .Flex_Box_Lokacije{
     display: flex;
@@ -84,10 +89,11 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     font-size: 20px;
-    border: 3px red solid;
+    background-color: transparent;
 }
+/*-------LOKACIJE SECTION--------------------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------*/
+/*-------BUDŽET SECTION----------------------------------------------------------------------*/
 
 .Flex_Box_Budžet{
     display: flex;
@@ -101,8 +107,25 @@ body{
     margin-left: 30px;
     margin-right: 30px;
     font-size: 20px;
-    border: 3px red solid;
+    background-color: transparent;
 }
 
-/*-----------------------------------------------------------------------------------------*/
+/*-------BUDŽET SECTION----------------------------------------------------------------------------------*/
 
+/*-------RADNO VRIJEME SECTION---------------------------------------------------------------------------*/
+.Flex_Box_RadnoVrijeme{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 10px;
+}
+.Radno_Vrijeme{
+
+    font-family: "Berlin Sans FB Demi", sans-serif;
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+    background-color: transparent;
+}
+/*------RADNO VRIJEME SECTION---------------------------------------------------------------------------*/
