@@ -8,8 +8,6 @@ body{
 .main-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: auto;
     font-size: 25px;
 }
 .main-navbar h1 {
@@ -21,8 +19,9 @@ body{
 }
 .logo\&img {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     float: left;
+    border: 3px red solid;
 }
 .main-navbar-a {
     padding:  10px;
@@ -50,6 +49,7 @@ body{
 }
 
 /*---------------------------------------------------------------------------------*/
+
 .Flex_Box_Jelovnik{
     display: flex;
     flex-direction: column;
@@ -103,3 +103,6 @@ body{
     font-size: 20px;
     border: 3px red solid;
 }
+
+/*-----------------------------------------------------------------------------------------*/
+
