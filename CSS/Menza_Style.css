@@ -1,0 +1,49 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #bccad6, #667292);
+}
+
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    font-size: 25px;
+}
+.main-navbar h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+.logo\&img {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+}
+.main-navbar-a {
+    padding:  10px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 800px
+}
+
+/*-----------------------------------------------------------------------------*/
+
+.Flex_Box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Page_Navigator {
+    font-family: "Berlin Sans FB Demi", sans-serif;
+    text-align: center;
+    font-size: 20px;
+    margin: 10px;
+    background-color: transparent;
+}
