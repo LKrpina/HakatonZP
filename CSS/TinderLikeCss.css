@@ -1,0 +1,132 @@
+/* General reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+/* Main container */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card Container */
+.card-container {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 0;
+}
+
+/* Card styles */
+.card {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 80%;
+    height: 60%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.card-info h2, .card-info p {
+    margin: 10px 0;
+}
+
+/* Hide the more info paragraph initially */
+.more-info {
+    display: none;
+    margin-top: 20px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+/* Button styles */
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #ff6b6b;
+    color: white;
+    font-size: 2rem;
+    padding: 15px 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 60px;
+    height: 60px;
+}
+
+.btn:hover {
+    background-color: #ff4757;
+}
+
+/* Info button in the middle */
+.info-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #4CAF50;
+    font-size: 1.5rem;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-btn:hover {
+    background-color: #45a049;
+}
+
+/* Active card styles */
+.card.active {
+    z-index: 1;
+}
+
+.card.swiped-left {
+    transform: translateX(-100vw) rotate(-20deg);
+}
+
+.card.swiped-right {
+    transform: translateX(100vw) rotate(20deg);
+}
