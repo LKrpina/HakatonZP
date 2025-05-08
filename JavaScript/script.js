@@ -7,7 +7,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
     // Dummy credentials (replace with real validation in production)
     if (username === 'admin' && password === '1234') {
-        window.location.href = 'Index.html';
+        window.location.href = 'index_logged_in.html';
     } else {
         errorMsg.textContent = 'Invalid username or password';
     }
