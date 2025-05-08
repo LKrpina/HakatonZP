@@ -34,7 +34,6 @@ body{
     flex-direction: row;
     justify-content: space-around;
 }
-
 .divisions {
     justify-content: space-evenly;
     display: flex;
