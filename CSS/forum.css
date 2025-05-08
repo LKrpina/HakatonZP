@@ -1,0 +1,120 @@
+
+/*---------------------------------------------*/
+
+.forum-section {
+    background-color: #1c2541;
+    color: #b0c4de;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    width: 80%;
+    max-width: 1000px;
+    margin: 20px auto; /* centriranje */
+    border-radius: 10px;
+}
+
+.forum-form {
+    background-color: #24305e;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto 30px auto;
+    width: 90%;
+    max-width: 600px; /* manja forma */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.forum-controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.forum-controls input, .forum-controls select {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+.forum-form input,
+.forum-form textarea,
+.forum-form button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.forum-form button {
+    background-color: #17a2b8;
+    color: white;
+    cursor: pointer;
+}
+
+.posts-container .post {
+    background-color: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post h3 {
+    margin: 0;
+    color: white;
+}
+
+.post small {
+    font-size: 0.9rem;
+    color: #aab7c4;
+}
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.post .tag {
+    color: #17a2b8;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.post-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.post-actions button {
+    background-color: #34495e;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.comments {
+    margin-top: 15px;
+}
+
+.comments input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    margin-bottom: 8px;
+}
+
+.comments ul {
+    list-style: none;
+    padding-left: 0;
+    color: #aab7c4;
+}

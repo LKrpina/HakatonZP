@@ -478,14 +478,14 @@ h2 {
 }
 
 .buttons {
+    margin-top: 1.5rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
     width: 100%;
-    border: black 2px solid;
-    background: lightseagreen;
-    padding: 1rem 2rem;
+    padding: 2rem 2rem;
+    background: #1c2541;
 }
 .buttons-container {
     display: flex;
@@ -494,8 +494,8 @@ h2 {
 
 /* Button styling */
 .btn {
-    background-color: #005aaa;   /* Blue background */
-    color: white;                /* White text */
+    background-color: #bccad6;   /* Blue background */
+    color: black;                /* White text */
     font-size: 1.2rem;           /* Font size */
     padding: 1rem 2rem;          /* Padding around the text */
     border: none;                /* No border */
@@ -506,7 +506,7 @@ h2 {
 }
 
 .btn:hover {
-    background-color: #004080;   /* Darker blue on hover */
+    background-color: lightgray;   /* Darker blue on hover */
     transform: scale(1.1);        /* Scale effect */
 }
 

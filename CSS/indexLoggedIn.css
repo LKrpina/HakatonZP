@@ -1,0 +1,31 @@
+.news-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.news-item:hover {
+    scale: 1.2;
+    transition: 0.6s;
+}
+
+.news-item {
+    background-color: #1c2541;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.news-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news-item p {
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+}
