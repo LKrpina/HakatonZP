@@ -4,6 +4,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Berlin Sans FB Demi", sans-serif;
 }
 
 
@@ -11,6 +12,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 body{
@@ -21,29 +23,49 @@ body{
 
 /*---------------------------------------------------------------------------------*/
 
-.header {
-    display: flex;
-    align-items: center;
-}
-    .header h1 {
-
-    }
-
 .main-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: #bccad6;
+    height: auto;
+    font-size: 25px;
 }
+    .main-navbar h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: black 1px solid;
+
+    }
+    .logo\&img {
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+    }
+    .main-navbar-a {
+        padding:  10px;
+        display: flex;
+        justify-content: space-around;
+        min-width: 800px
+    }
+
 .divisions {
     justify-content: space-evenly;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+    #frontpage-text {
+        height: 200px;
+        width: auto;
+    }
     .divisions p {
         width: fit-content;
-        border: 1px solid black;
+        font-size: 20px;
     }
+
 
 
 .frontpage-images {
@@ -68,6 +90,12 @@ footer {
 
 
 /*--------------------------------------LUCIJAN-------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------KARLO--------------------------------------*/
 
 
 /*----------------------------------------------------------------------------------*/
