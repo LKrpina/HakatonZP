@@ -5,21 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FrontPage</title>
     <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/header.js"></script>
 </head>
 
 <body>
     <section>
-        <div class="main-navbar">
-            <div class="logo&img">
-                <h1>SMART STUDENT ZADAR</h1>
-            </div>
+        <header>
+            <div class="header-container">
+                <!-- logo i naziv -->
+                <div class="header-left">
+                    <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+                    <span class="site-title">Smart Student Zadar</span>
+                </div>
 
-            <div class="main-navbar-a">
-                <a>Main nav-bar</a>
-                <a>Main nav-bar that</a>
-                <a>Main nav-bar this</a>
+                <!-- Hamburger ikona za mobilne uređaje -->
+                <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+                <!-- Navigacija -->
+                <nav class="header-nav" id="navMenu">
+                    <a href="#pocetna">Početna</a>
+                    <a href="#usluge">Usluge</a>
+                    <a href="#kontakt">Kontakt</a>
+                    <a href="login.html" class="login-icon" title="Prijava">&#128274;</a>
+                </nav>
             </div>
-        </div>
+        </header>
+
         <div class="image-wrapper">
             <img src="../DATA/nova-menza-unizd.jpg" alt="Hover Image">
             <div class="overlay">
@@ -35,17 +46,112 @@
             </p>
         </div>
     </section>
-    <section>
+    <section class="buttons">
+    <div class="buttons-container">
+        <a href = "LoginZaForum.html">
+        <button class="btn" onclick=>Studentski Forum 🗨️ </button>
+        </a>
+        <a href = "LoginZaRepeticije.html">
+        <button class="btn" onclick="">Studentske Repeticije 📚 </button>
+        </a>
+    </div>
+        </section>
+    <main class="layout">
+        <div class="sidebar">
+            <img src="../DATA/brucosi.png" alt="Brucosi" class="side-image">
+        </div>
+        <div class="container-vodic">
+            <h1>Vodič za brucoše</h1>
+            <div class="guide">
+                <details>
+                    <summary>Prvi koraci nakon upisa</summary>
+                    <ul>
+                        <li><strong>Studentska iskaznica (X-ica):</strong> koristiš je za menzu, studentski servis i kao dokaz statusa.</li>
+                        <li><strong>Registracija u knjižnici:</strong> Sveučilišna knjižnica je odlična za učenje i istraživanje.</li>
+                    </ul>
+                </details>
 
+                <details>
+                    <summary>Gdje jesti?</summary>
+                    <ul>
+                        <li><strong>Studentske menze:</strong> najpovoljnija i najčešća opcija – subvencionirani obroci.</li>
+                    </ul>
+                </details>
+
+                <details>
+                    <summary>Smještaj</summary>
+                    <ul>
+                        <li><strong>Studentski dom:</strong> jeftinija opcija s pravilima, odlična lokacija i društvo.</li>
+                        <li><strong>Privatni smještaj:</strong> skuplji, ali fleksibilniji. Pazi na ugovor i režije!</li>
+                  </ul>
+                </details>
+
+                <details>
+                    <summary>Prijevoz</summary>
+                    <ul>
+                        <li><strong>Autobusi u Zadru:</strong> besplatni prijevoz za studente unutar grada.</li>
+                        <li><strong>Pješačenje:</strong> većina važnih lokacija je unutar 20 minuta hoda.</li>
+                 </ul>
+                </details>
+
+                <details>
+                    <summary>Faks i učenje</summary>
+                    <ul>
+                        <li><strong>Merlin sustav:</strong> službeni e-learning za sve kolegije.</li>
+                        <li><strong>Savjet:</strong> Ne čekaj zadnji tren za ispite. Čitaj e-mailove – tu su sve obavijesti.</li>
+                    </ul>
+                </details>
+            </div>
+     </div>
+    </main>
+    <section class="students-benefits">
+        <div class="header">
+            <span class="icon">🎓</span>
+            <h2>Studiraš? Imaš više nego što misliš.</h2>
+        </div>
+
+        <p class="intro-text">
+            Upisom na faks otvara ti se svijet studentskih pogodnosti:
+        </p>
+
+        <ul class="benefits-list">
+            <li>Subvencionirana prehrana u menzama</li>
+            <li>Smještaj u studentskim domovima</li>
+            <li>Besplatan javni prijevoz unutar Zadra</li>
+            <li>Studentski servis</li>
+            <li>Popusti na kulturna događanja</li>
+            <li>Popusti na ulaznice u Nacionalne parkove</li>
+            <li>Razni popusti i usluge na platformi Kolegio</li>
+        </ul>
     </section>
     <footer>
-        <p>Footer image logo</p>
-        <div class="footer-links">
-            <a>link 1</a>
-            <a>link 2</a>
-            <a>link 3</a>
+        <div class="footer-container">
+            <!-- Lijevo: Logo + Naziv -->
+            <div class="footer-section" id="footer-section-logo">
+                <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+            </div>
+
+            <!-- Sredina: Administratori -->
+            <div class="footer-section">
+                <h4>Administratori</h4>
+                <p><strong>Eli Puljiz</strong><br>
+                    e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+                    tel: +385 91 123 4567</p>
+
+                <p><strong>Lucijan Krpina</strong><br>
+                    e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+                    tel: +385 91 765 4321</p>
+            </div>
+
+            <!-- Desno: Lokacija -->
+            <div class="footer-section">
+                <h4>Lokacija</h4>
+                <p>Sveučilište u Zadru<br>
+                    Studentski centar<br>
+                    Ulica dr. Franje Tuđmana 24 d<br>
+                    23 000 Zadar</p>
+            </div>
         </div>
-        <p>CW</p>
     </footer>
 
 </body>
