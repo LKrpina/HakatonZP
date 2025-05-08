@@ -249,6 +249,9 @@ header {
     height: 20rem;
     overflow: hidden;
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .image-wrapper img {
@@ -284,6 +287,8 @@ header {
 
 .layout {
     display: flex;
+    justify-content: space-around;
+    flex-flow:  wrap;
     gap: 2rem;
     margin: 2rem auto;
     padding: 2rem;
@@ -300,9 +305,9 @@ header {
 }
 
 .side-image {
-    max-width: 400px;
-    width: 35rem;
-    height: auto;
+    max-width: 350px;
+    width: auto;
+    height: 100%;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -316,7 +321,7 @@ header {
 }
 .container-vodic {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -479,6 +484,7 @@ h2 {
     padding: 2rem;
     width: 1200px;
     max-width: 70%;
+    flex-flow: wrap;
 }
 
 .btn {
