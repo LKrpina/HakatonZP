@@ -405,7 +405,13 @@ body {
     padding: 0;
     color: #333;
 }
-
+.wrapper {
+    max-width: 1200px; /* ili koliko želiš */
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 0 20px; /* malo unutarnjeg razmaka da ne bude zalijepljeno za rub */
+}
 /* Container for the section */
 .students-benefits {
     width: 1200px;
@@ -518,6 +524,8 @@ h2 {
 
 
 /*ZABAVA*/
+
+/*navigacija*/
 .zabava-navigacija {
     display: flex;
     gap: 50px;
@@ -525,7 +533,6 @@ h2 {
     margin: 20px 0;
     flex-wrap: wrap;
 }
-
 .zabava-navigacija a {
     background-color: #1c2541;
     color: white;
@@ -535,12 +542,12 @@ h2 {
     font-weight: bold;
     transition: background-color 0.3s;
 }
-
 .zabava-navigacija a:hover {
     background-color: #1c2541;
 }
 
 
+/*flexbox*/
 .event-container {
     display: flex;
     justify-content: space-around;
