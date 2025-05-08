@@ -1,0 +1,50 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.main-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.divisions {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+    .divisions p {
+        width: fit-content;
+        border: 1px solid black;
+    }
+
+
+.frontpage-images {
+    min-height: 200px;
+    min-width: 200px;
+    height: 15vw;
+    width: 15vw;
+    margin: 3vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    .footer-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+        .footer-links a {
+            margin: 1vw;
+        }
