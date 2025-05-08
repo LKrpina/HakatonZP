@@ -60,9 +60,10 @@ body{
     #frontpage-text {
         height: 200px;
         width: auto;
+        margin: 50px;
+        justify-content: center;
     }
     .divisions p {
-        width: fit-content;
         font-size: 20px;
     }
 
