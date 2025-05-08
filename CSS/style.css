@@ -1,25 +1,55 @@
 
 
 /*------------------------------------NE DIRAJ-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Berlin Sans FB Demi", sans-serif;
+}
+
 
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------------------------------------------------------------------------------*/
 
-.header {
-    display: flex;
-    align-items: center;
-}
-
 .main-navbar {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    background: #bccad6;
+    height: auto;
+    font-size: 25px;
 }
+    .main-navbar h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: black 1px solid;
+
+    }
+    .logo\&img {
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+    }
+    .main-navbar-a {
+        padding:  10px;
+        display: flex;
+        justify-content: space-around;
+        min-width: 800px
+    }
 
 .divisions {
     justify-content: space-evenly;
@@ -27,24 +57,28 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
 }
+    #frontpage-text {
+        height: 200px;
+        width: auto;
+        margin: 50px;
+        justify-content: center;
+    }
     .divisions p {
-        width: fit-content;
-        border: 1px solid black;
+        font-size: 20px;
     }
 
 
+
 .frontpage-images {
-    min-height: 200px;
-    min-width: 200px;
-    height: 15vw;
-    width: 15vw;
-    margin: 3vw;
+    height: 200px;
+    width: auto;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: auto;
 }
     .footer-links {
         display: flex;
@@ -54,3 +88,15 @@ section {
         .footer-links a {
             margin: 1vw;
         }
+
+
+/*--------------------------------------LUCIJAN-------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------KARLO--------------------------------------*/
+
+
+/*----------------------------------------------------------------------------------*/
