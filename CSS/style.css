@@ -103,7 +103,59 @@ footer {
 
 
 /*--------------------------------------LUCIJAN-------------------------------------*/
+.image-wrapper {
+    position: relative;
+    width: 100%;        /* Full horizontal width */
+    height: 20rem;      /* Fixed vertical height */
+    overflow: hidden;
+}
 
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures image covers area without distortion */
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    pointer-events: none; /* prevent overlay blocking hover */
+}
+
+.text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    transition: transform 0.5s ease;
+
+}
+
+.top-half {
+    top: 40%;
+}
+
+.bottom-half {
+    top: 60%;
+}
+
+.image-wrapper:hover .top-half {
+    transform: translateY(-100%);
+}
+
+.image-wrapper:hover .bottom-half {
+    transform: translateY(100%);
+}
 
 /*----------------------------------------------------------------------------------*/
 
