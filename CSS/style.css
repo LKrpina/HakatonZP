@@ -1,11 +1,22 @@
 
 
 /*------------------------------------NE DIRAJ-------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
 
 section {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 /*---------------------------------------------------------------------------------*/
@@ -14,6 +25,9 @@ section {
     display: flex;
     align-items: center;
 }
+    .header h1 {
+
+    }
 
 .main-navbar {
     display: flex;
@@ -34,17 +48,15 @@ section {
 
 
 .frontpage-images {
-    min-height: 200px;
-    min-width: 200px;
-    height: 15vw;
-    width: 15vw;
-    margin: 3vw;
+    height: 200px;
+    width: auto;
 }
 
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: auto;
 }
     .footer-links {
         display: flex;
