@@ -3,7 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Forum</title>
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-analytics.js";
+    import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBSfUSwlS1D2iWHIQsOQm8goZua79jmtCc",
+      authDomain: "hackatlon2425zabranjenopusenje.firebaseapp.com",
+      databaseURL: "https://hackatlon2425zabranjenopusenje-default-rtdb.firebaseio.com",
+      projectId: "hackatlon2425zabranjenopusenje",
+      storageBucket: "hackatlon2425zabranjenopusenje.firebasestorage.app",
+      messagingSenderId: "686649123895",
+      appId: "1:686649123895:web:f9d01373a4a60e92e90bb2",
+      measurementId: "G-GC79RCQKL5"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+  <script src="../JS/forum.js"></script>
+  <link rel="stylesheet" href="../CSS/forum.css">
+  <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
 <header>
@@ -27,6 +54,27 @@
   </div>
 </header>
 
+<section class="forum-section">
+  <div class="forum-controls">
+    <input type="text" id="searchInput" placeholder="Pretraži postove...">
+    <select id="sortSelect">
+      <option value="newest">Najnovije</option>
+      <option value="oldest">Najstarije</option>
+      <option value="az">A-Z Naslov</option>
+    </select>
+  </div>
+
+  <form id="postForm" class="forum-form">
+    <input type="text" id="username" placeholder="Vaše ime" required>
+    <input type="text" id="title" placeholder="Naslov teme" required>
+    <textarea id="description" placeholder="Opis..." required></textarea>
+    <input type="text" id="tags" placeholder="#tagovi (npr. #tražimpomoć)" required>
+    <input type="file" id="imageInput" accept="image/*">
+    <button type="submit">Objavi</button>
+  </form>
+
+  <div id="postsContainer" class="posts-container"></div>
+</section>
 
 
 <footer>
@@ -58,29 +106,6 @@
     </div>
   </div>
 </footer>
-<script type="module">
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-app.js";
-  import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.7.1/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyBSfUSwlS1D2iWHIQsOQm8goZua79jmtCc",
-    authDomain: "hackatlon2425zabranjenopusenje.firebaseapp.com",
-    databaseURL: "https://hackatlon2425zabranjenopusenje-default-rtdb.firebaseio.com",
-    projectId: "hackatlon2425zabranjenopusenje",
-    storageBucket: "hackatlon2425zabranjenopusenje.firebasestorage.app",
-    messagingSenderId: "686649123895",
-    appId: "1:686649123895:web:4a175695aec1d843e90bb2",
-    measurementId: "G-L0LNCYCBTE"
-  };
-
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
-</script>
 </body>
 </html>
