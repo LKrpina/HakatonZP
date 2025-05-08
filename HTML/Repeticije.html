@@ -2,47 +2,96 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tinder Clone</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Profile Grid</title>
+    <link rel="stylesheet" href="../CSS/TinderLikeCss.css">
 </head>
 <body>
+<header>
+    <div class="header-container">
+        <!-- logo i naziv -->
+        <div class="header-left">
+            <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+            <span class="site-title">Smart Student Zadar</span>
+        </div>
 
+        <!-- Hamburger ikona za mobilne uređaje -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Navigacija -->
+        <nav class="header-nav" id="navMenu">
+            <a href="#pocetna">Početna</a>
+            <a href="#usluge">Usluge</a>
+            <a href="#kontakt">Kontakt</a>
+            <a href="login.html" class="login-icon" title="Prijava">&#128274;</a>
+        </nav>
+    </div>
+</header>
+
+<h1 style="text-align:center;">Studentske Repeticije</h1>
 <div class="container">
-    <div class="card-container">
-        <div class="card" id="card1">
-            <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile 1">
-            <div class="card-info">
-                <h2>John Doe</h2>
-                <p>Age: 25</p>
-            </div>
-            <p class="more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo purus sit amet nulla luctus, a consequat erat vestibulum.</p>
-        </div>
-        <div class="card" id="card2">
-            <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Profile 2">
-            <div class="card-info">
-                <h2>Jane Smith</h2>
-                <p>Age: 23</p>
-            </div>
-            <p class="more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo purus sit amet nulla luctus, a consequat erat vestibulum.</p>
-        </div>
-        <div class="card" id="card3">
-            <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Profile 3">
-            <div class="card-info">
-                <h2>Mike Johnson</h2>
-                <p>Age: 28</p>
-            </div>
-            <p class="more-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse commodo purus sit amet nulla luctus, a consequat erat vestibulum.</p>
-        </div>
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 1">
+        <h3>John Doe</h3>
+        <p><span class="label">Proficient in:</span> JavaScript</p>
+        <p><span class="label">Wants to learn:</span> Python</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 
-    <div class="buttons">
-        <button id="dislike" class="btn">👎</button>
-        <button id="info" class="btn info-btn">ℹ️</button>
-        <button id="like" class="btn">👍</button>
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 2">
+        <h3>Jane Smith</h3>
+        <p><span class="label">Proficient in:</span> HTML & CSS</p>
+        <p><span class="label">Wants to learn:</span> React</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 3">
+        <h3>Mike Johnson</h3>
+        <p><span class="label">Proficient in:</span> Java</p>
+        <p><span class="label">Wants to learn:</span> Kotlin</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 4">
+        <h3>Emily Rose</h3>
+        <p><span class="label">Proficient in:</span> Python</p>
+        <p><span class="label">Wants to learn:</span> Go</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 5">
+        <h3>Chris Green</h3>
+        <p><span class="label">Proficient in:</span> PHP</p>
+        <p><span class="label">Wants to learn:</span> Node.js</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 6">
+        <h3>Lisa Brown</h3>
+        <p><span class="label">Proficient in:</span> C++</p>
+        <p><span class="label">Wants to learn:</span> Rust</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 5">
+        <h3>Chris Green</h3>
+        <p><span class="label">Proficient in:</span> PHP</p>
+        <p><span class="label">Wants to learn:</span> Node.js</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+
+    <div class="card">
+        <img src="../DATA/paola.jpg" alt="Person 6">
+        <h3>Lisa Brown</h3>
+        <p><span class="label">Proficient in:</span> C++</p>
+        <p><span class="label">Wants to learn:</span> Rust</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </div>
 
-<script src="../JavaScript/"></script>
 </body>
 </html>
