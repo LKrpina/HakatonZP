@@ -529,7 +529,7 @@ h2 {
 .zabava-navigacija {
     display: flex;
     gap: 50px;
-    justify-content: center;
+    justify-content: space-around;
     margin: 20px 0;
     flex-wrap: wrap;
 }
@@ -550,12 +550,12 @@ h2 {
 /*flexbox*/
 .event-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     margin: 40px 0;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 20px;
+    padding: 20px;           /* Jednaka udaljenost od svih rubova */
+    box-sizing: border-box;  /* Da padding ne razbija layout */
     background: #1c2541;
 }
 
@@ -568,7 +568,7 @@ h2 {
 
 .event-text {
     border-radius: 15px;
-    height: 150px;
+    height: 250px;
     width: auto;
     display: flex;
     flex-flow: column;
@@ -579,7 +579,8 @@ h2 {
 
 .event-image img {
     max-width: 100%;
-    height: auto;
+    height: 250px;            /* fiksna visina */
+    object-fit: cover;
     display: block;
     border-radius: 12px;
 }
@@ -594,6 +595,9 @@ h2 {
     .event-map {
         flex: 1 1 100%;
     }
+}
+iframe {
+    border-radius: 12px;
 }
 .naslov_zabava {
 
