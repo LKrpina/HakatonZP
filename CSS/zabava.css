@@ -598,6 +598,8 @@ h2 {
 }
 iframe {
     border-radius: 12px;
+    width: 250px;
+    height: 250px;
 }
 .naslov_zabava {
 
