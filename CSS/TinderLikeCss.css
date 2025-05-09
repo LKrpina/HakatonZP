@@ -17,12 +17,37 @@ body {
     margin-right: auto;
 }
 
+.h-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:  center;
+    color: white;
+    margin: 20px;
+
+}
+
+.sub-h {
+    background-color: #1c2541;
+    width: 1200px;
+    border-radius: 12px;
+    margin: 20px;
+    padding: 20px 0;
+}
+
+.h-container h2 {
+    color: white;
+    font-size: 27px;
+}
+
 .card {
-    background: white;
+    background: #1c2541;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     padding: 16px;
     text-align: center;
+    color:  white;
 }
 
 .card img {
@@ -42,7 +67,7 @@ body {
 
 .label {
     font-weight: bold;
-    color: #555;
+    color: white;
 }
 
 header {
