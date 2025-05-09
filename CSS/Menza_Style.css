@@ -8,11 +8,12 @@
 
 }
 
+
 .section{
     width: 80%;
     border:black solid;
     border-radius: 10px;
-    background: linear-gradient(180deg, #f2e394, #e67e22);
+    background: #1c2541;
 }
 
 .menza-nav{
