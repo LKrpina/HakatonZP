@@ -1,0 +1,106 @@
+.postavke-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-container {
+    width: 90%;
+    max-width: 1000px;
+    height: fit-content;
+    background: #1c2541;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin: 30px;
+    color: white;
+}
+/* ELi je nibb */
+.settings-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.settings-section {
+    margin-bottom: 35px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.settings-section h3 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.setting-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.setting-item label {
+    flex: 1;
+    font-size: 16px;
+    color: white;
+}
+
+.setting-item input[type="checkbox"],
+.setting-item select,
+.setting-item input[type="text"] {
+    margin-left: 10px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.save-btn {
+    background-color: darkolivegreen;
+    color: white;
+}
+
+.save-btn:hover {
+    background-color: green;
+}
+
+.reset-btn {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.reset-btn:hover {
+    background-color: #c0392b;
+}
+
+.back-btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background-color: #3498db;
+    text-decoration-line: none;
+    color: white;
+    align-items: center;
+}
+
+.back-btn:hover {
+    background-color: royalblue;
+}

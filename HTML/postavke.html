@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Postavke</title>
-    <link rel="stylesheet" href="../CSS/StilZaServis.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/settings.css">
 </head>
 <body>
 <header>
@@ -25,8 +26,109 @@
         </nav>
     </div>
 </header>
+<section class="postavke-section">
+<div class="settings-container">
+    <h2>Postavke korisnika ⚙️</h2>
 
+    <div class="settings-section">
+        <h3>Izgled i tema</h3>
+        <div class="setting-item">
+            <label>Tamni način rada</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Veličina fonta</label>
+            <select>
+                <option>Mala</option>
+                <option>Srednja</option>
+                <option>Velika</option>
+            </select>
+        </div>
+        <div class="setting-item">
+            <label>Kontrast boja</label>
+            <input type="checkbox">
+        </div>
+    </div>
 
+    <div class="settings-section">
+        <h3>Privatnost</h3>
+        <div class="setting-item">
+            <label>Prikaži status aktivnosti</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Omogući praćenje lokacije</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Vidljivost profila</label>
+            <select>
+                <option>Javno</option>
+                <option>Samo studenti</option>
+                <option>Privatno</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="settings-section">
+        <h3>Obavijesti</h3>
+        <div class="setting-item">
+            <label>Email obavijesti</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Push obavijesti</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Zvuk obavijesti</label>
+            <input type="checkbox">
+        </div>
+    </div>
+
+    <div class="settings-section">
+        <h3>Račun</h3>
+        <div class="setting-item">
+            <label>Korisničko ime</label>
+            <input type="text" value="student001">
+        </div>
+        <div class="setting-item">
+            <label>Promijeni lozinku</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Dvoslojna autentifikacija</label>
+            <input type="checkbox">
+        </div>
+    </div>
+
+    <div class="settings-section">
+        <h3>Ostalo</h3>
+        <div class="setting-item">
+            <label>Sinkroniziraj uređaje</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Automatsko spremanje postavki</label>
+            <input type="checkbox">
+        </div>
+        <div class="setting-item">
+            <label>Jezik sučelja</label>
+            <select>
+                <option>Hrvatski</option>
+                <option>Engleski</option>
+                <option>Njemacki</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button class="save-btn">💾 Spremi</button>
+        <button class="reset-btn">♻️ Resetiraj</button>
+        <a class="back-btn" href="index_logged_in.html">↩️ Natrag</a>
+    </div>
+</div>
+</section>
 
 <footer>
     <div class="footer-container">
