@@ -533,8 +533,8 @@ h2 {
     flex-wrap: wrap;
 }
 .zabava-navigacija a {
-    background-color: #1c2541;
-    color: white;
+    background: linear-gradient(90deg, #bccad6, #667292);
+    color: black;
     padding: 10px 15px;
     border-radius: 8px;
     text-decoration: none;
@@ -542,9 +542,19 @@ h2 {
     transition: background-color 0.3s;
 }
 .zabava-navigacija a:hover {
-    background-color: #1c2541;
+    background: linear-gradient(90deg, #bccad6, #667292);
 }
 
+.ispod_footera {
+    background: #1c2541;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+#koncerti {
+    margin-top: 50px;
+}
 
 /*flexbox*/
 .event-container {
@@ -599,8 +609,8 @@ h2 {
 /*karte*/
 iframe {
     border-radius: 10px;
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    height: 100%
 }
 .naslov_zabava {
 
@@ -611,12 +621,13 @@ iframe {
 }
 
 .podnaslovi_zabava2 {
-
+    padding: 10px;
 }
 
 h1 {
     text-align: center;
     font-size: 50px;
+    color: white;
 }
 
 h2 {
