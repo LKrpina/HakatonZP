@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontPage</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="../JS/header.js"></script>
+</head>
+
+<body>
+<section>
+    <header>
+        <div class="header-container">
+            <!-- logo and name -->
+            <div class="header-left">
+                <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+                <span class="site-title">Smart Student Zadar</span>
+            </div>
+
+            <!-- Hamburger icon for mobile devices -->
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+            <!-- Navigation -->
+            <nav class="header-nav" id="navMenu">
+                <a href="#pocetna">Home</a>
+                <a href="#vodic">Freshmen Guide</a>
+                <a href="#studiras">Studying?</a>
+                <a href="Login.html" class="login-icon" title="Login">Login🔐</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="image-wrapper" id="pocetna">
+        <img src="../DATA/background-homepage.jpg" alt="Background">
+    </div>
+    <div class="frontpage-text">
+        <p>
+            Welcome to the <strong>Smart Student City</strong> website – your digital compass for student life!<br><br>
+            Whether you're checking your class schedule, looking at the canteen menu, searching for a student job or
+            planning a break from college – all your student needs, in one place.
+        </p>
+    </div>
+</section>
+
+<!-- ------------------------------THIS IS NOT NEEDED-------------------------------------
+    <section class="buttons">
+        <div class="buttons-container">
+            <a href = "Menza.html">
+                <button class="btn" onclick=>Canteen 🍕 </button>
+            </a>
+            <a href = "LoginZaForum.html">
+            <button class="btn" onclick=>Student Forum 🗨️ </button>
+            </a>
+            <a href = "LoginZaRepeticije.html">
+            <button class="btn" onclick="">Student Tutoring 📚 </button>
+            </a>
+            <a href = "Zabava.html">
+                <button class="btn" onclick="">Entertainment 🎉 </button>
+            </a>
+        </div>
+    </section>
+------------------------------------------------------------------------------------ -->
+<main class="layout" id="vodic">
+    <div class="sidebar">
+        <img src="../DATA/brucosi.png" alt="Freshmen" class="side-image">
+    </div>
+    <div class="container-vodic">
+        <h1>Freshmen Guide</h1>
+        <div class="guide">
+            <details>
+                <summary>First steps after enrollment</summary>
+                <ul>
+                    <li><strong>Student card (X-card):</strong> used for canteen, student service and as proof of status.</li>
+                    <li><strong>Library registration:</strong> The University Library is great for studying and research.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Where to eat?</summary>
+                <ul>
+                    <li><strong>Student canteens:</strong> most affordable and common option – subsidized meals.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Accommodation</summary>
+                <ul>
+                    <li><strong>Student dormitory:</strong> cheaper with rules, great location and community.</li>
+                    <li><strong>Private accommodation:</strong> more expensive but flexible. Mind the contract and utilities!</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>Transport</summary>
+                <ul>
+                    <li><strong>Buses in Zadar:</strong> free transport for students within the city.</li>
+                    <li><strong>Walking:</strong> most key locations are within a 20-minute walk.</li>
+                </ul>
+            </details>
+
+            <details>
+                <summary>College and studying</summary>
+                <ul>
+                    <li><strong>Merlin system:</strong> the official e-learning platform for all courses.</li>
+                    <li><strong>Tip:</strong> Don’t wait until the last minute for exams. Check your emails – all notices are there.</li>
+                </ul>
+            </details>
+        </div>
+    </div>
+</main>
+<section class="students-benefits" id="studiras">
+    <div class="header">
+        <span class="icon">🎓</span>
+        <h2>Studying? You have more than you think.</h2>
+    </div>
+
+    <p class="intro-text">
+        Enrolling in university opens a world of student benefits:
+    </p>
+
+    <ul class="benefits-list">
+        <li>Subsidized meals in canteens</li>
+        <li>Accommodation in student dormitories</li>
+        <li>Free public transport within Zadar</li>
+        <li>Student service</li>
+        <li>Discounts on cultural events</li>
+        <li>Discounts for National Park tickets</li>
+        <li>Various discounts and services on the Kolegio platform</li>
+    </ul>
+</section>
+<footer>
+    <div class="footer-container">
+        <!-- Left: Logo + Name -->
+        <div class="footer-section" id="footer-section-logo">
+            <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+        </div>
+
+        <!-- Center: Administrators -->
+        <div class="footer-section">
+            <h4>Administrators</h4>
+            <p><strong>Eli Puljiz</strong><br>
+                e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+                phone: +385 91 123 4567</p>
+
+            <p><strong>Lucijan Krpina</strong><br>
+                e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+                phone: +385 91 765 4321</p>
+        </div>
+
+        <!-- Right: Location -->
+        <div class="footer-section">
+            <h4>Location</h4>
+            <p>University of Zadar<br>
+                Student Center<br>
+                Dr. Franje Tuđman Street 24 d<br>
+                23 000 Zadar</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

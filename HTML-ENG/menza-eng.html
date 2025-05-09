@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:flex="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Restaurant</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/Menza_Style.css" />
+  <script src="../JS/header.js"></script>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <!-- logo and title -->
+    <div class="header-left">
+      <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+      <span class="site-title">Smart Student Zadar</span>
+    </div>
+
+    <!-- Hamburger icon for mobile -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation -->
+    <nav class="header-nav" id="navMenu">
+      <a href="index_logged_in.html">Home🏠</a>
+      <a href="postavke.html">Settings⚙️</a>
+      <a href="Index.html" class="login-icon" title="Logout">Logout🚪</a>
+    </nav>
+  </div>
+</header>
+
+<h1 style="margin:30px; text-align: center; font-size: xxx-large">Welcome to the Student Restaurant!</h1>
+
+<section class="section">
+  <nav>
+    <a href="#menu">Daily Menu 🍽️</a>
+    <a href="#location">Location 📍</a>
+    <a href="#hours">Opening Hours 🕒</a>
+    <a href="#budget">Budget 💵</a>
+    <a href="#contact">Contact 📧</a>
+  </nav>
+</section>
+
+<br><br>
+
+<h2 style="text-align: center">Daily Menu 🍽️</h2>
+<section class="cila-stranica">
+  <div class="section" id="menu">
+    <div class="menu-category">
+      <div>
+        <h3>Appetizers</h3>
+        <p>Bruschetta - €6<br>Soup of the Day - €5</p>
+      </div>
+      <img src="../DATA/bruscetta.jpg" alt="Bruschetta - €6">
+      <img src="../DATA/juha.jpg" alt="Soup of the Day - €5">
+    </div>
+    <div class="menu-category">
+      <div>
+        <h3>Main Courses</h3>
+        <p>Fried Chicken - €12<br>Vegetarian Pasta - €10</p>
+      </div>
+      <img src="../DATA/piletina.jpg" alt="Fried Chicken - €12">
+      <img src="../DATA/vege-pasta.jpg" alt="Vegetarian Pasta - €10">
+    </div>
+    <div class="menu-category">
+      <div>
+        <h3>Desserts</h3>
+        <p>Tiramisu - €5<br>Ice Cream - €4</p>
+      </div>
+      <img src="../DATA/tiramisu.jpg" alt="Tiramisu - €5">
+      <img src="../DATA/icecream.jpg" alt="Ice Cream - €4">
+    </div>
+    <div class="menu-category">
+      <div>
+        <h3>Drinks</h3>
+        <p>Soft Drinks - €2<br>House Wine - €6</p>
+      </div>
+      <img src="../DATA/negazirano.jpg" alt="Soft Drinks - €2">
+      <img src="../DATA/vino.jpg" alt="House Wine - €6">
+    </div>
+  </div>
+
+  <div class="section" id="location">
+    <h2 style="color: white">Locations 📍</h2>
+    <p style="color: white">Ruđera Boškovića Street 5, 23000 Zadar, Croatia</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <p style="color: white">Put Stanova 1a, 23000 Zadar, Croatia</p>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+
+  <div class="section" id="hours">
+    <h2 style="color: white">Opening Hours 🕒</h2>
+    <ul>
+      <li style="color: white"><strong>Monday–Friday:</strong> 11:00 AM – 10:00 PM</li>
+      <li style="color: white"><strong>Saturday:</strong> 12:00 PM – 11:00 PM</li>
+      <li style="color: white"><strong>Sunday:</strong> <span class="closed">Closed</span></li>
+    </ul>
+  </div>
+
+  <div class="section" id="budget">
+    <h2 style="color: white">Budget 💵</h2>
+    <p style="color: white">Meals range from €5 to €20. The maximum spend per visit is €15.</p>
+  </div>
+
+  <div class="section" id="contact">
+    <h2 style="color: white">Contact Us 📧</h2>
+    <p style="color: white">Phone: (123) 456-7890<br>Email: info@myrestaurant.com</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required /><br>
+      <input type="email" placeholder="Your Email" required /><br>
+      <textarea placeholder="Your Message" rows="4" required></textarea><br>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <!-- Left: Logo + Name -->
+    <div class="footer-section" id="footer-section-logo">
+      <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+    </div>
+
+    <!-- Center: Administrators -->
+    <div class="footer-section">
+      <h4>Administrators</h4>
+      <p><strong>Eli Puljiz</strong><br>
+        e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+        phone: +385 91 123 4567</p>
+
+      <p><strong>Lucijan Krpina</strong><br>
+        e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+        phone: +385 91 765 4321</p>
+    </div>
+
+    <!-- Right: Location -->
+    <div class="footer-section">
+      <h4>Location</h4>
+      <p>University of Zadar<br>
+        Student Center<br>
+        Dr. Franje Tuđmana Street 24 d<br>
+        23000 Zadar</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
