@@ -17,12 +17,19 @@
 }
 
 .menza-nav{
+    margin-top: 20px;
+    width: 100%;
+    background:#1c2541;
+    border: solid 1px #1c2541;
+    border-radius: 10px;
+
+}
+.menza-nav nav{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
 
 }
 #menu {
