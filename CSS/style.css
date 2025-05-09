@@ -161,29 +161,29 @@ header {
     height: auto;
     font-size: 25px;
 }
-    .logo {
-        display: block;
-        height:  50px;
-        width: 50px;
-    }
-    .main-navbar h1 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
+.logo {
+    display: block;
+    height:  50px;
+    width: 50px;
+}
+.main-navbar h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
 
-    }
-    .logo\&img {
-        display: flex;
-        justify-content: space-evenly;
-        float: left;
-    }
-    .main-navbar-a {
-        padding:  10px;
-        display: flex;
-        justify-content: space-around;
-        min-width: 800px
-    }
+}
+.logo\&img {
+    display: flex;
+    justify-content: space-evenly;
+    float: left;
+}
+.main-navbar-a {
+    padding:  10px;
+    display: flex;
+    justify-content: space-around;
+    min-width: 800px
+}
 
 .divisions {
     justify-content: space-evenly;
@@ -225,17 +225,17 @@ header {
 }
 
 .divisions p {
-        font-size: 20px;
-    }
-    .divisions img {
-        height: 35rem;
-        max-height: 300px;
-        width: auto;
-        border-radius: 10%;
-        border: lightblue 2px solid;
-        padding: 10px;
-        background: lightblue;
-    }
+    font-size: 20px;
+}
+.divisions img {
+    height: 35rem;
+    max-height: 300px;
+    width: auto;
+    border-radius: 10%;
+    border: lightblue 2px solid;
+    padding: 10px;
+    background: lightblue;
+}
 
 .frontpage-images {
     height: 100%;
@@ -249,6 +249,9 @@ header {
     height: 20rem;
     overflow: hidden;
     margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .image-wrapper img {
@@ -284,6 +287,8 @@ header {
 
 .layout {
     display: flex;
+    justify-content: space-around;
+    flex-flow:  wrap;
     gap: 2rem;
     margin: 2rem auto;
     padding: 2rem;
@@ -300,9 +305,9 @@ header {
 }
 
 .side-image {
-    max-width: 400px;
-    width: 35rem;
-    height: auto;
+    max-width: 350px;
+    width: auto;
+    height: 100%;
     object-fit: contain;
     border-radius: 10px;
 }
@@ -316,7 +321,7 @@ header {
 }
 .container-vodic {
     max-width: 800px;
-    margin: 2rem auto;
+    margin: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -469,6 +474,40 @@ h2 {
     align-items: center;
     gap: 1rem;
     width: 100%;
+    margin-top:  2rem;
+}
+
+#logged-in-button-container {
+    display: flex;
+    justify-content: space-around;
+    background: #1c2541;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 93.5%;
+    max-width: 2000px;
+    flex-flow: wrap;
+}
+
+#logged-in-button-container .btn {
+    background: transparent;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    font-weight: 600;
+}
+
+#logged-in-button-container .btn:hover {
+    background-color: lightgray;
+    transform: scale(1.1);
+    color: #1c2541;
+}
+
+#logged-in-button-container .btn:focus {
+    outline: none;
 }
 
 .buttons-container {
@@ -479,6 +518,7 @@ h2 {
     padding: 2rem;
     width: 1200px;
     max-width: 70%;
+    flex-flow: wrap;
 }
 
 .btn {
