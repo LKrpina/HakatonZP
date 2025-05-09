@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Restaurant</title>
+  <link rel="stylesheet" href="../CSS/style.css">
   <link rel="stylesheet" href="../CSS/Menza_Style.css" />
+  <script src="../JS/header.js"></script>
 </head>
 <body>
 <header>
@@ -20,10 +22,8 @@
 
     <!-- Navigacija -->
     <nav class="header-nav" id="navMenu">
-      <a href="Index.html">Početna</a>
-      <a href="#usluge">Usluge</a>
-      <a href="#kontakt">Kontakt</a>
-      <a href="login.html" class="login-icon" title="Prijava">&#128274;</a>
+      <a href="index_logged_in.html">Početna</a>
+      <a href="Index.html" class="login-icon" title="Odjava">Odjava🚪</a>
     </nav>
   </div>
 </header>
@@ -111,5 +111,34 @@
 </div>
 
 </section>
+<footer>
+  <div class="footer-container">
+    <!-- Lijevo: Logo + Naziv -->
+    <div class="footer-section" id="footer-section-logo">
+      <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+    </div>
+
+    <!-- Sredina: Administratori -->
+    <div class="footer-section">
+      <h4>Administratori</h4>
+      <p><strong>Eli Puljiz</strong><br>
+        e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+        tel: +385 91 123 4567</p>
+
+      <p><strong>Lucijan Krpina</strong><br>
+        e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+        tel: +385 91 765 4321</p>
+    </div>
+
+    <!-- Desno: Lokacija -->
+    <div class="footer-section">
+      <h4>Lokacija</h4>
+      <p>Sveučilište u Zadru<br>
+        Studentski centar<br>
+        Ulica dr. Franje Tuđmana 24 d<br>
+        23 000 Zadar</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>
