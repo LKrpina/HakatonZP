@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Settings</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/settings.css">
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <!-- Logo and title -->
+    <div class="header-left">
+      <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+      <span class="site-title">Smart Student Zadar</span>
+    </div>
+
+    <!-- Hamburger icon for mobile devices -->
+    <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation -->
+    <nav class="header-nav" id="navMenu">
+      <a href="index_logged_in.html">Home🏠</a>
+      <a href="postavke.html">Settings⚙️</a>
+      <a href="Index.html" class="login-icon" title="Logout">Logout🚪</a>
+    </nav>
+  </div>
+</header>
+
+<section class="postavke-section">
+  <div class="settings-container">
+    <h2>User Settings ⚙️</h2>
+
+    <div class="settings-section">
+      <h3>Appearance and Theme</h3>
+      <div class="setting-item">
+        <label>Dark Mode</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Font Size</label>
+        <select>
+          <option>Small</option>
+          <option>Medium</option>
+          <option>Large</option>
+        </select>
+      </div>
+      <div class="setting-item">
+        <label>Color Contrast</label>
+        <input type="checkbox">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>Privacy</h3>
+      <div class="setting-item">
+        <label>Show Activity Status</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Enable Location Tracking</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Profile Visibility</label>
+        <select>
+          <option>Public</option>
+          <option>Students Only</option>
+          <option>Private</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>Notifications</h3>
+      <div class="setting-item">
+        <label>Email Notifications</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Push Notifications</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Notification Sound</label>
+        <input type="checkbox">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>Account</h3>
+      <div class="setting-item">
+        <label>Username</label>
+        <input type="text" value="student001">
+      </div>
+      <div class="setting-item">
+        <label>Change Password</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Two-Factor Authentication</label>
+        <input type="checkbox">
+      </div>
+    </div>
+
+    <div class="settings-section">
+      <h3>Other</h3>
+      <div class="setting-item">
+        <label>Sync Devices</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Auto Save Settings</label>
+        <input type="checkbox">
+      </div>
+      <div class="setting-item">
+        <label>Interface Language</label>
+        <select>
+          <option>Croatian</option>
+          <option>English</option>
+          <option>German</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="save-btn">💾 Save</button>
+      <button class="reset-btn">♻️ Reset</button>
+      <a class="back-btn" href="index_logged_in.html">↩️ Back</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-container">
+    <!-- Left: Logo + Title -->
+    <div class="footer-section" id="footer-section-logo">
+      <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+    </div>
+
+    <!-- Center: Administrators -->
+    <div class="footer-section">
+      <h4>Administrators</h4>
+      <p><strong>Eli Puljiz</strong><br>
+        e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+        tel: +385 91 123 4567</p>
+
+      <p><strong>Lucijan Krpina</strong><br>
+        e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+        tel: +385 91 765 4321</p>
+    </div>
+
+    <!-- Right: Location -->
+    <div class="footer-section">
+      <h4>Location</h4>
+      <p>University of Zadar<br>
+        Student Center<br>
+        Dr. Franje Tuđmana Street 24d<br>
+        23000 Zadar</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
