@@ -11,7 +11,6 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 body{
@@ -557,6 +556,7 @@ h2 {
     padding: 20px;           /* Jednaka udaljenost od svih rubova */
     box-sizing: border-box;  /* Da padding ne razbija layout */
     background: #1c2541;
+    border-radius: 10px;
 }
 
 .event-text,
@@ -567,7 +567,7 @@ h2 {
 }
 
 .event-text {
-    border-radius: 15px;
+    border-radius: 10px;
     height: 250px;
     width: auto;
     display: flex;
@@ -582,7 +582,7 @@ h2 {
     height: 250px;            /* fiksna visina */
     object-fit: cover;
     display: block;
-    border-radius: 12px;
+    border-radius: 10px;
 }
 /* Responsive tweaks */
 @media (max-width: 768px) {
@@ -596,8 +596,9 @@ h2 {
         flex: 1 1 100%;
     }
 }
+/*karte*/
 iframe {
-    border-radius: 12px;
+    border-radius: 10px;
     width: 250px;
     height: 250px;
 }
