@@ -107,10 +107,8 @@ nav a:hover {
     max-width: 1000px;
     margin: auto;
 }
-
 h2 {
     font-size: 2rem;
-    border-bottom: 3px solid #e67e22;
     padding-bottom: 0.5rem;
     margin-bottom: 1.5rem;
 }
