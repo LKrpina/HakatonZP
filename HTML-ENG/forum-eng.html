@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forum</title>
+    <script src="../JS/forum.js"></script>
+    <script src="../JS/header.js"></script>
+    <link rel="stylesheet" href="../CSS/forum.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<header>
+    <div class="header-container">
+        <!-- logo and name -->
+        <div class="header-left">
+            <img src="../DATA/bez_pozadine_logo-removebg-preview.png" alt="Smart Student Zadar logo" class="header-logo">
+            <span class="site-title">Smart Student Zadar</span>
+        </div>
+
+        <!-- Hamburger icon for mobile devices -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+
+        <!-- Navigation -->
+        <nav class="header-nav" id="navMenu">
+            <a href="index_logged_in.html">Home🏠</a>
+            <a href="postavke.html">Settings⚙️</a>
+            <a href="Index.html" class="login-icon" title="Log out">Log out🚪</a>
+        </nav>
+    </div>
+</header>
+
+<section class="forum-section">
+    <div class="forum-controls">
+        <input type="text" id="searchInput" placeholder="Search posts...">
+        <select id="sortSelect">
+            <option value="newest">Newest</option>
+            <option value="oldest">Oldest</option>
+            <option value="az">A-Z Title</option>
+        </select>
+    </div>
+
+    <form id="postForm" class="forum-form">
+        <input type="text" id="username" placeholder="Your name" required>
+        <input type="text" id="title" placeholder="Topic title" required>
+        <textarea id="description" placeholder="Description..." required></textarea>
+        <input type="text" id="tags" placeholder="#tags (e.g. #needhelp)" required>
+        <input type="file" id="imageInput" accept="image/*">
+        <button type="submit">Post</button>
+    </form>
+
+    <div id="postsContainer" class="posts-container"></div>
+</section>
+
+<footer>
+    <div class="footer-container">
+        <!-- Left: Logo + Name -->
+        <div class="footer-section" id="footer-section-logo">
+            <img src="../DATA/bez_pozadine_logo-removebg-preview.png/" alt="Smart Student Zadar logo" class="footer-logo">
+        </div>
+
+        <!-- Center: Administrators -->
+        <div class="footer-section">
+            <h4>Administrators</h4>
+            <p><strong>Eli Puljiz</strong><br>
+                e-mail: <a href="mailto:epuljiz24@unizd.hr">epuljiz24@unizd.hr</a><br>
+                phone: +385 91 123 4567</p>
+
+            <p><strong>Lucijan Krpina</strong><br>
+                e-mail: <a href="mailto:lkrpina24@unizd.hr">lkrpina24@unizd.hr</a><br>
+                phone: +385 91 765 4321</p>
+        </div>
+
+        <!-- Right: Location -->
+        <div class="footer-section">
+            <h4>Location</h4>
+            <p>University of Zadar<br>
+                Student Center<br>
+                Dr. Franje Tuđman Street 24 d<br>
+                23 000 Zadar</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
